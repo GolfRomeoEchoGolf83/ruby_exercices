@@ -16,3 +16,7 @@ end
 frequencies.reverse!
 
 # iterating over the hash
+frequencies.each do 
+    |word, count| 
+    puts word + " " + count.to_s
+end
