@@ -63,7 +63,12 @@ else
     puts "The movie has been deleted"
 end
 
-# Error management 
+# error management
 else 
-    puts "Error!"
+    puts "You did not type any of the four options."
+    puts "Please choose : "
+    puts "--add," 
+    puts "--update," 
+    puts "--display or " 
+    puts "-- delete option only."
 end
