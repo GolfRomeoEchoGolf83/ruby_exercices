@@ -44,8 +44,14 @@ else
     puts "#{title} has been updated with the new rating #{rating}"
 end
 
-# display the DB
+# displaying DB
 when "display"
+movies.each { 
+    |movie, rating| 
+    puts "#{movie}: #{rating}" 
+}
+
+
 # delete a movie
 when "delete"
 # Error management 
