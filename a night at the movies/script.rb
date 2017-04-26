@@ -51,9 +51,18 @@ movies.each {
     puts "#{movie}: #{rating}" 
 }
 
-
-# delete a movie
+# deleting movie from DB
 when "delete"
+puts "Which movie would you want to delete ?"
+title = gets.chomp.downcase
+# test if the movie exist in the DB
+if movies[title.to_sym].nil?
+    puts "The movie does not exist or it already has been deleted from the database"
+else 
+    movies.delete(title)
+    puts "The movie has been deleted"
+end
+
 # Error management 
 else 
     puts "Error!"
