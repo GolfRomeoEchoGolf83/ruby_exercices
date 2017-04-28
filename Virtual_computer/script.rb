@@ -21,3 +21,5 @@ class Computer
     end
 end
 
+my_computer = Computer.new("Hal", "xv36")
+
