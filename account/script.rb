@@ -19,4 +19,8 @@ class Account
         return "Access denied: incorrect PIN."
     end
 
+    # public method
+    # if pin_number == pin then show account's balance istead show pin_error message
+    def display_balance(pin_number)
+        pin_number == pin ? "Balance : $#{@balance}" : pin_error
 end
