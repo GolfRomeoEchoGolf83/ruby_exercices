@@ -25,4 +25,15 @@ class Account
     def display_balance(pin_number)
         pin_number == pin ? "Balance : $#{@balance}" : pin_error
     end
+
+    # withdrawal managing
+    def withdraw(pin_number, amount)
+        if pin_number == pin
+            @balance -= amount
+            puts "Withdrew #{amount}. New balance: $#{@balance}."
+        else
+            pin_error
+        end
+    end
+    
 end
