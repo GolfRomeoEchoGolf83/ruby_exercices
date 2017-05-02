@@ -35,5 +35,7 @@ class Account
             pin_error
         end
     end
-    
+  
 end
+
+checking_account = Account.new('Greg')
