@@ -20,7 +20,9 @@ class Account
     end
 
     # public method
+    public
     # if pin_number == pin then show account's balance istead show pin_error message
     def display_balance(pin_number)
         pin_number == pin ? "Balance : $#{@balance}" : pin_error
+    end
 end
